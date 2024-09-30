@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @SagaForge17
+- 👋 Hi, I’m @SagaForge17.
 - 👀 I’m interested in HTML/CSS/JS.
 - 💞️ I’m looking to collaborate on HTML web design.
 - 😄 Pronouns: He/Him.
