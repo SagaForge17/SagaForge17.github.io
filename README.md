@@ -1,6 +1,7 @@
 <head>
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 </head>
+
 - 👋 Hi, I’m @SagaForge17.
 - 👀 I’m interested in HTML/CSS/JS.
 - 💞️ I’m looking to collaborate on HTML web design.
