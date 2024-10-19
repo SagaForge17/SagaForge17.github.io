@@ -33,6 +33,7 @@
             margin: 0;
             overflow: hidden;
         }
+
       	toolbar {
       		background: linear-gradient(to bottom, #f3f3f3, #e1e1e1);
             border-bottom: 1px solid #a1a1a1;
@@ -122,7 +123,7 @@
       	.window hr {
       		width: 90%;
       	}
-      	#maillink {
+	#maillink {
       		color: blue;
       	}
       	#maillink:hover {
@@ -188,26 +189,23 @@
           </div>
           <center style="position:fixed;left:130px;right:250px;">
           <li>
-          <button class="dropbtn" onclick="accountMenu()">Account ▼</button>
+          <button onclick="accountMenu()">Account ▼</button>
           </li>
           <li>
-          <button>Library ▼</button>
+          <button onclick="libraryMenu()">Library ▼</button>
           </li>
           </center>
-          <div style="position:fixed;right:2px;">
+          <div style="position:fixed;right:10px;">
           <li>
-          <p style="margin-left:15px;transform:scale(1.4)translateY(-4.5px);">Search:</p>
-          </li>
-          <li>
-          <input id="searchtxt" type="text" placeholder="Search Games..." style="transform:translateY(-5px);"/>
+          <p id="NewDetailsTxt" style="transform:scale(1.1)translateY(-4.8px);"></p>
           </li>
           </div>
       </toolbar>
 <div id="main">
   <br><br><br>
   <center>
-    <div class="window"><br>
-    <h1 style="transform:scale(2.5);">404</h1>
+    <div class="window"><br><br>
+    <h1 style="transform:scale(3);">404</h1><br>
     </div>
     <div class="window">
     <br>
@@ -215,6 +213,7 @@
     </div>
   </center>
 </div>
+      <script src="https://sagaforge17.github.io/news.js"></script>
       <script>
         const bubbleCount = 130;
         const bubbles = [];
@@ -229,6 +228,21 @@
             document.body.appendChild(bubble);
             bubbles.push(bubble);
         }
+    </script>
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                document.querySelector('.intro').style.display = 'none';
+            }, 8000); // Match the duration of fadePopIn and fadeOut animations
+        };
+      	
+      	function accountMenu() {
+      		window.open("https://sagaforge17.github.io/account/", "_self");
+      	}
+      
+      	function libraryMenu() {
+      		window.open("https://sagaforge17.github.io/library/", "_self");
+      	}
     </script>
 </body>
 </html>
