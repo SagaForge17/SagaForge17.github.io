@@ -1,1 +1,1 @@
-document.getElementById("NewDetailsTxt").innerHTML = "Nothing new here...";
+document.getElementById("NewDetailsTxt").innerHTML = "Nothing new here. :(";
