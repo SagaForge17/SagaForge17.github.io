@@ -1,1 +1,1 @@
-document.getElementById("NewDetailsTxt").innerHTML = "New games in Library!";
+document.getElementById("NewDetailsTxt").innerHTML = "Nothing new here...";
