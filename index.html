@@ -236,7 +236,7 @@
         // Set a timeout to refresh the page after 10 seconds if the audio is not loaded
         refreshTimeout = setTimeout(() => {
             location.reload(); // Refresh the page
-        }, 200); // Adjust the delay as needed (10 seconds in this case)
+        }, 150); // Adjust the delay as needed (10 seconds in this case)
 
         // Handle errors gracefully
         audioElement.addEventListener('error', () => {
