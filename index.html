@@ -32,6 +32,7 @@
         body {
             margin: 0;
             overflow: hidden;
+      		display: none; /* Hide the page until the audio is ready */
         }
         .intro {
             position: absolute;
@@ -177,8 +178,8 @@
             padding: 0;
             overflow: hidden;
             height: 100%;
-            background-color: #ff0000; /* Starting color */
-            animation: colorCycle 30s linear infinite;
+            background-color: #555; /* Starting color */
+            animation: colorCycle 30s 2.5s linear infinite;
         }
         @keyframes colorCycle {
             0% { background-color: #ff0000; } /* Red */
@@ -220,14 +221,20 @@
         <source src="https://sagaforge17.github.io/intro.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
+
     <script>
-        // Ensure the sound starts immediately and unmutes after starting
         const audioElement = document.getElementById('sound');
-        audioElement.muted = false; // Unmute once playback starts
-      	
-      	// Ensure the sound doesn't repeat
-        audioElement.addEventListener('ended', () => {
-        audioElement.removeAttribute('autoplay');
+
+        // Wait for the audio to load completely before showing the page
+        audioElement.addEventListener('canplaythrough', () => {
+            document.body.style.display = 'block'; // Show the page
+            audioElement.play(); // Ensure playback starts
+        });
+
+        // Handle errors gracefully
+        audioElement.addEventListener('error', () => {
+            alert('Error loading audio. Please try again later.');
+            document.body.style.display = 'block'; // Show the page even if the audio fails
         });
     </script>
         <img id="introimg1" width="40%" src="https://sagaforge17.github.io/SF-banner.png">
