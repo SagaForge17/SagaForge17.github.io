@@ -224,12 +224,19 @@
 
     <script>
         const audioElement = document.getElementById('sound');
+        let refreshTimeout;
 
-        // Wait for the audio to load completely before showing the page
+        // Wait for the audio to load completely
         audioElement.addEventListener('canplaythrough', () => {
-            audioElement.play(); // Ensure playback starts
+            clearTimeout(refreshTimeout); // Cancel the refresh timeout
             document.body.style.display = 'block'; // Show the page
+            audioElement.play(); // Ensure playback starts
         });
+
+        // Set a timeout to refresh the page after 10 seconds if the audio is not loaded
+        refreshTimeout = setTimeout(() => {
+            location.reload(); // Refresh the page
+        }, 10000); // Adjust the delay as needed (10 seconds in this case)
 
         // Handle errors gracefully
         audioElement.addEventListener('error', () => {
