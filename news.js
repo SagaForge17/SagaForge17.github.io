@@ -1,1 +1,1 @@
-document.getElementById("NewDetailsTxt").innerHTML = "Library Menu was Updated!";
+document.getElementById("NewDetailsTxt").innerHTML = "BITLIFE IS HERE!!!";
