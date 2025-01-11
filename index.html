@@ -227,8 +227,8 @@
 
         // Wait for the audio to load completely before showing the page
         audioElement.addEventListener('canplaythrough', () => {
-            document.body.style.display = 'block'; // Show the page
             audioElement.play(); // Ensure playback starts
+            document.body.style.display = 'block'; // Show the page
         });
 
         // Handle errors gracefully
