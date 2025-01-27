@@ -17,15 +17,15 @@
       		animation: colorCycle 30s linear infinite;
       	}
         @keyframes colorCycle {
-    0% { background-color: rgba(255, 0, 0, 0.5); } /* Red */
-    12.5% { background-color: rgba(255, 127, 0, 0.5); } /* Orange */
-    25% { background-color: rgba(255, 255, 0, 0.5); } /* Yellow */
-    37.5% { background-color: rgba(0, 255, 0, 0.5); } /* Green */
-    50% { background-color: rgba(0, 255, 255, 0.5); } /* Cyan */
-    62.5% { background-color: rgba(0, 0, 255, 0.5); } /* Blue */
-    75% { background-color: rgba(75, 0, 130, 0.5); } /* Indigo */
-    87.5% { background-color: rgba(148, 0, 211, 0.5); } /* Violet */
-    100% { background-color: rgba(255, 0, 0, 0.5); } /* Red */
+    0% { background-color: rgba(255, 0, 0, 0.4); } /* Red */
+    12.5% { background-color: rgba(255, 127, 0, 0.4); } /* Orange */
+    25% { background-color: rgba(255, 255, 0, 0.4); } /* Yellow */
+    37.5% { background-color: rgba(0, 255, 0, 0.4); } /* Green */
+    50% { background-color: rgba(0, 255, 255, 0.4); } /* Cyan */
+    62.5% { background-color: rgba(0, 0, 255, 0.4); } /* Blue */
+    75% { background-color: rgba(75, 0, 130, 0.4); } /* Indigo */
+    87.5% { background-color: rgba(148, 0, 211, 0.4); } /* Violet */
+    100% { background-color: rgba(255, 0, 0, 0.4); } /* Red */
         }
         .bubble {
             position: absolute;
