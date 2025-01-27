@@ -14,7 +14,7 @@
             height: 100%;
       		position: absolute;
       		z-index: 0;
-      		animation: colorCycle 30s 2.5s linear infinite;
+      		animation: colorCycle 30s linear infinite;
       	}
         @keyframes colorCycle {
     0% { background-color: rgba(255, 0, 0, 0.5); } /* Red */
