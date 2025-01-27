@@ -172,50 +172,10 @@
       		color: #333;
       	}
     </style>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            height: 100%;
-            background-color: #555; /* Starting color */
-            animation: colorCycle 30s 2.5s linear infinite;
-        }
-        @keyframes colorCycle {
-            0% { background-color: #ff0000; } /* Red */
-            12.5% { background-color: #ff7f00; } /* Orange */
-            25% { background-color: #ffff00; } /* Yellow */
-            37.5% { background-color: #00ff00; } /* Green */
-            50% { background-color: #00ffff; } /* Cyan */
-            62.5% { background-color: #0000ff; } /* Blue */
-            75% { background-color: #4b0082; } /* Indigo */
-            87.5% { background-color: #9400d3; } /* Violet */
-      		100% { background-color: #ff0000; } /* Red */
-        }
-        .bubble {
-            position: absolute;
-            bottom: -100px;
-            width: 30px; /* Increased size */
-            height: 30px; /* Increased size */
-            background: rgba(255, 255, 255, 0.7); /* More visible */
-            border-radius: 50%;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Shadow for depth */
-            animation: rise 10s infinite ease-in-out;
-      		z-index: 1;
-        }
-        @keyframes rise {
-            0% {
-                transform: translateY(0);
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(-1000px);
-                opacity: 0;
-            }
-        }
-    </style>
+<link rel="stylesheet" href="https://sagaforge17.github.io/bubble-layout.css">
 </head>
 <body>
+<div id="gradient-bg"></div>
     <div class="intro">
     <audio id="sound" autoplay>
         <source src="https://sagaforge17.github.io/intro.mp3" type="audio/mpeg">
