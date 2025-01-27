@@ -1,1 +1,1 @@
-document.getElementById("NewDetailsTxt").innerHTML = "BITLIFE IS HERE!!!";
+document.getElementById("NewDetailsTxt").innerHTML = "Nothing New Today...";
