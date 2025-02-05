@@ -1,10 +1,10 @@
 (function() {
     // Minimum screen size required
-    const minWidth = 980;
+    const minWidth = 985;
     const minHeight = 650;
 
     // URL to redirect users if their screen is too small
-    const redirectUrl = "https://example.com/small-screen-warning"; // Change this to your target page
+    const redirectUrl = "https://sagaforge17.github.io/2small.html"; // Change this to your target page
 
     function checkScreenSize() {
         if (window.innerWidth < minWidth || window.innerHeight < minHeight) {
