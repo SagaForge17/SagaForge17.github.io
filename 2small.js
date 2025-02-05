@@ -1,7 +1,7 @@
 (function() {
     // Minimum screen size required
-    const minWidth = 800;
-    const minHeight = 500;
+    const minWidth = 980;
+    const minHeight = 650;
 
     // URL to redirect users if their screen is too small
     const redirectUrl = "https://example.com/small-screen-warning"; // Change this to your target page
